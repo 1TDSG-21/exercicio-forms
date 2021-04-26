@@ -24,12 +24,12 @@
 <p>Cada item deve ser um hyperlink para (#).</p>
 </li>
 <li>CONTEUDO
-<p>Abaixo dessa imagem devemos criar uma <div> e identificar esta com a classe “box”, ela deve conter três <div> para comportar os três formulários que devem ser criados no exercício:</p>
+<p>Aqui devemos criar uma 'div' e identificar esta com a classe “box”, ela deve conter três 'div' para comportar os três formulários que devem ser criados no exercício:</p>
 </li>
 <li>RODAPÉ
-<p>Para o rodapé nós vamos ter um <p>, um <smmall> e um <a> com os respectivos textos onde o smalltag deve ter a classe “creditos”.</p>
+<p>Para o rodapé nós vamos ter um 'p', um 'smmall' e um 'a' com os respectivos textos onde o 'small' deve ter a classe “creditos”.</p>
 <p> 'p' = “2021.Design Responsivo.”</p>
- <p>A palavra “Criado por: SEU NOME” deve estar entre uma small e o nome NOME deve estar entre um a onde o hyperlink deve apontar para (#).</p>
+ <p>A palavra “Criado por: SEU NOME” deve estar entre uma 'small' e o nome NOME deve estar entre um 'a' onde o hyperlink deve apontar para (#).</p>
 </li>
 </ul>
 
@@ -40,3 +40,4 @@
 APRESENTAÇÃO
 Todo o trabalho aqui deve ser realizado no arquivo de css externo estilo.css.
 Aplique estilos diversos aos elementos listados acima.
+
