@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <div id="container">
         <header class="cabeçalho">
-            <img id="imagem" src="./img/banner-forms1.jpg" alt="Banner" title="Banner">
+            <img class="logo" src="./img/banner-forms1.jpg" alt="Imagem de Navios" title="Banner">
             <nav class="menu">
                 <ul>
                     <li><a href="#" >HOME</a></li>
@@ -22,6 +22,98 @@
 
         </header>
         <section class="conteudo">
+            <div class="box">
+                <div>
+                    <form action="" method="get"></form>
+                        <fieldset>
+                            <fieldset>
+                                <legend>Dados Pessoais</legend>
+                                <div>
+                                    <label for="idTxtName">Nome:</label>
+                                    <input type="text" name="txtName" id="idTxtName" placeholder="nome" required 
+                                    oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
+
+                                </div>
+                                <div>
+                                    <label for="idTxtAdress">Endereço:</label>
+                                    <input type="text" name="txtAdress" id="idTxtAdress" placeholder="endereço"
+                                    required
+                                    oninvalid="setCustomValidity('Este campo deve  ser preenchido.')" pattern="[a-zA-Z]{3,100}$" >
+                                </div>
+                                <div>
+                                    <label for="idTxtCity">Cidade:</label>
+                                    <input type="text" name="txtCity" id="idTxtCity" placeholder="cidade"
+                                    required
+                                    oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
+                                </div>
+                                <div>
+                                    <label for="selectEstado">Estado:</label>
+                                    <select name="estado" id="selectEstado">
+                                    
+                                        <option value="sp">São Paulo</option>
+                                        <option value="rj">Rio de Janeiro</option>
+                                        <option value="mg">Minas Gerais</option>
+                                        <option value="es">Espirito Santo</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Dados Profissionais</legend>
+                                <div>
+                                    <p>Natureza do Cargo</p>
+                                    
+                                    
+                                    <input type="radio" name="rdbGer" id="idRdbCargoGer" value="ger" required>
+                                    <label for="idRdbCargoGer">Gerência</label>
+                                    
+                                    <input type="radio" name="rdbFin" id="idRdbCargoFin" value="fin" required>
+                                    <label for="idRdbCargoFin">Financeiro</label>
+                                    
+                                    <input type="radio" name="rdbRec" id="idRdbCargoRec" value="rec" required>
+                                    <label for="idRdbCargoRec">Recepção</label>
+                                    
+                                    <input type="radio" name="rdbAdm" id="idRdbCargoAdm" value="adm" required>
+                                    <label for="idRdbCargoAdm">Administrativo</label>
+                                    
+                                    <input type="radio" name="rdbJur" id="idRdbCargoJur" value="jur" required>
+                                    <label for="idRdbCargoJur">Jurídico</label>
+                                </div>
+                                <div>
+                                    <p>Area de Interesse</p>
+
+                                    <input type="checkbox" name="ckboxComp" id="idRdbComp" value="comp" required >
+                                    <label for="idCkboxComp">Computação</label>
+                                
+                                    <input type="checkbox" name="ckboxBio" id="idCkboxBio" value="bio" required>
+                                    <label for="idCkboxBio">Biologia</label>
+                                
+                                    <input type="checkbox" name="ckboxEnv" id="icCkboxEnv">
+                                    <label for="idCkboxEnv">Meio Ambiente</label>
+
+                                    <input type="checkbox" name="ckboxEng" id="idCkboxEng">
+                                    <label for="idCkboxEng">Engenharia</label>
+
+                                    <input type="checkbox" name="ckboxHis" id="idCkboxHis">
+                                    <label for="idCkboxHis">Historia</label>
+                                </div>
+                                <div>
+                                    <label for="idTxtCur">Mini Curriculo:</label>
+                                    <textarea name="txtCur" id="" cols="50" rows="10" maxlength="300"></textarea>
+                                </div>
+                            </fieldset>
+                            <div>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </div>
+                        </fieldset>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
 
         </section>
         <footer class="rodape"> 
