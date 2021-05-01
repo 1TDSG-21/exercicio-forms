@@ -1,3 +1,67 @@
 .logo{
     width: 50%;
 }
+
+.menu ul{
+    padding:0px;
+    margin:0px;
+    background-color:#fffafa;
+    list-style:none;
+}
+
+.menu ul li { 
+    display: inline; 
+}
+
+.menu ul li a {
+    color: #800080;
+    padding: 2px 10px;
+    display: inline-block;
+    background-color:#fffafa;
+    text-decoration: none;
+    border-bottom:3px solid #800080;
+    
+}
+
+.menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+.dadosPessoais{
+    display: inline-block;
+    width: 90px;
+}
+
+.box{
+    background-color:#f0f8ff;
+}
+
+
+input:required + [oninvalid] {
+    color: #ff0000;
+}
+
+input:required:valid {
+    border: 2px solid #009900;
+}
+input:required:not(:placeholder-shown):invalid {
+    border: 2px solid #c9001b;
+}
+
+.rodape{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #800080;
+}
+
+
+.creditos{
+    background-color:#a9a9a9 ;
+}
+
+.creditos a:hover{
+    color:#ffd700;
+    background-color:#ff0000;
+    border-bottom:#ff0000;
+}

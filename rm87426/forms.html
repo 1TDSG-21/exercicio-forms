@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
     <title>FORMULARIO-INICIO</title>
 </head>
 <body>
     <div id="container">
         <header class="cabeçalho">
-            <img class="logo" src="./img/banner-forms1.jpg" alt="Imagem de Navios" title="Banner">
+            
             <nav class="menu">
                 <ul>
-                    <li><a href="#" >HOME</a></li>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">NOTICIAS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                
+                    
+                    <li><a href="#" > <i class="fa fa-home"></i> HOME </a></li>
+                 
+                    
+                    <li><a href="#"> <i class="fa fa-comment"></i> SOBRE </a></li>
+                
+                    <li><a href="#"> <i class="fa fa-file"></i> NOTICIAS</a></li>
+                
+                    <li><a href="#"> <i class="fa fa-address-book"></i> CONTATO</a></li>
+                    <img class="logo" src="./img/banner-forms1.jpg" alt="Banner com Girassóis" title="Girassóis">
                 </ul>
             </nav>
+            
                 
 
         </header>
@@ -26,25 +36,23 @@
                 <div>
                     <form action="forms.html" method="get">
                         <fieldset>
-                            <fieldset>
+                            <fieldset class="dadosPessoais">
                                 <legend>Dados Pessoais</legend>
                                 <div>
                                     <label for="idTxtName">Nome:</label>
-                                    <input type="text" name="txtName" id="idTxtName" placeholder="nome" required 
-                                    oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
+                                    <input type="text" name="txtName" id="idTxtName" placeholder="Nome"  
+                                    oninvalid="setCustomValidity('Este campo deve ser preenchido com letras maisculas e minusculas.')" pattern="[a-zA-Z % ^ ´ ~]{3,100 }$" required>
 
                                 </div>
                                 <div>
                                     <label for="idTxtAdress">Endereço:</label>
-                                    <input type="text" name="txtAdress" id="idTxtAdress" placeholder="endereço"
-                                    required
-                                    oninvalid="setCustomValidity('Este campo deve  ser preenchido.')" pattern="[a-zA-Z]{3,100}$" >
+                                    <input type="text" name="txtAdress" id="idTxtAdress" placeholder="Endereço"
+                                    oninvalid="setCustomValidity('Este campo deve  ser preenchido com letras e numeros, sem nenhum outro caracter.')" pattern="[a-zA-Z0-9]{3,100}{1,100}$" required >
                                 </div>
                                 <div>
                                     <label for="idTxtCity">Cidade:</label>
-                                    <input type="text" name="txtCity" id="idTxtCity" placeholder="cidade"
-                                    required
-                                    oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
+                                    <input type="text" name="txtCity" id="idTxtCity" placeholder="Cidade"
+                                    oninvalid="setCustomValidity('Este campo deve ser preenchido com letras maisculas e minusculas.')" pattern="[a-zA-Z]{3,100 % ~ }$" required>
                                 </div>
                                 <div>
                                     <label for="selectEstado">Estado:</label>
@@ -54,6 +62,7 @@
                                         <option value="rj">Rio de Janeiro</option>
                                         <option value="mg">Minas Gerais</option>
                                         <option value="es">Espirito Santo</option>
+                                        <option value="0" selected="selected">Selecione uma Opção</option>
                                     </select>
                                 </div>
                             </fieldset>
@@ -63,7 +72,7 @@
                                     <p>Natureza do Cargo</p>
                                     
                                     
-                                    <input type="radio" name="rdbCardo" id="idRdbCargoGer" value="ger" required>
+                                    <input type="radio" name="rdbCargo" id="idRdbCargoGer" value="ger" required>
                                     <label for="idRdbCargoGer">Gerência</label>
                                     
                                     <input type="radio" name="rdbCargo" id="idRdbCargoFin" value="fin" required>
@@ -98,7 +107,7 @@
                                 </div>
                                 <div>
                                     <label for="idTxtCur">Mini Curriculo:</label>
-                                    <textarea name="txtCur" id="" cols="50" rows="10" maxlength="300"></textarea>
+                                    <textarea name="txtCur" id="" cols="50" rows="10" maxlength="300" placeholder="Digite brevemente seu curriculo..."></textarea>
                                 </div>
                             </fieldset>
                             <div>
