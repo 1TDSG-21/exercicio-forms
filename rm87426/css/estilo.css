@@ -36,6 +36,11 @@
 
 .box{
     background-color:#f0f8ff;
+    
+}
+
+.box div{
+    padding-top: 30px;
 }
 
 
