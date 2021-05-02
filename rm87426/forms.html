@@ -41,7 +41,7 @@
                                 <div>
                                     <label for="idTxtName">Nome:</label>
                                     <input type="text" name="txtName" id="idTxtName" placeholder="Nome"  
-                                    oninvalid="setCustomValidity('Este campo deve ser preenchido com letras maisculas e minusculas.')" pattern="[a-zA-Z]{3,100 }$" required>
+                                    oninvalid="setCustomValidity('Este campo deve ser preenchido com letras maisculas e minusculas.')" pattern="[a-zA-Z]{3,100}$" required>
 
                                 </div>
                                 <div>
@@ -110,8 +110,12 @@
                                     <textarea name="txtCur" id="" cols="50" rows="10" maxlength="300" placeholder="Digite brevemente seu curriculo..."></textarea>
                                 </div>
                             </fieldset>
-                            
+                            <div>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </div>
                         </fieldset>
+
                     </form>
                 </div>
                 <div>
@@ -134,17 +138,49 @@
                                     <input type="radio" name="idRdbTit" id="idRdbTitRainha" value="rainha">
                                     <label for="idRdbTitRainha">Rainha</label>
                                 </div>
-                            </fieldset>
+
+
+                            </fieldse>
+                                <div>
+                                    <label for="idTextoNome">Nome:..*</label>
+                                    <input type="text" name="textoNome" id="idTextoNome" placeholder="Seu Nome" oninvalid="setCustomValidity('Este campo deve ser preenchido com letras maisculas e minusculas.')" pattern="[a-zA-Z]{3,100}$" required>
+                                </div>
+                                <div>
+                                    <label for="idTxtEmail">E-mail:..*</label>
+                                    <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Email" oninvalid="setCustomValidity('Preencha seu e-mail de forma correta.')" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+                                </div>
+                                <div>
+                                    <label for="idTxtPassword">Senha:..*</label>
+                                    <input type="text" name="txtPassword" id="idTxtPassword" placeholder="Senha" oninvalid="setCustomValidity('Este campo deve ser preenchido com letras e numeros, maximo oito caracteres.')" pattern="[a-zA-Z0-9]{4,8}$" required>
+                                </div>
+                                <h2>Informações de Pagamento</h2>
+                                <div>
+                                    <label for="">Tipo de Cartão</label>
+                                    <select name="Cartao" id="tipoCartao">
+                                        <option value="v">Visa</option>
+                                        <option value="m">Mastercard</option>
+                                        <option value="0" selected="selected">Selecione uma opção </option>
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="idNumCartao">Numero do cartão:..*</label>
+                                    <input type="text" name="numCartao" id="idNumCartao" placeholder="Numero do Cartão" oninvalid="setCustomValidity('Este campo deve ser preenchido com numeros')" pattern="[0-9]{16}$" required>
+                                </div>
+                                <div>
+                                    <label for="idTxtDataEx">Data de expedição:..*</label>
+                                    <input type="text" name="txtDataEx" id="idTxtDataEx" placeholder="dd/mm/aaaa">
+                                </div>
                         </fieldset>
+                        <div>
+                            <button type="submit" class="btn">Validar Pagamento</button>
+                        </div>
                     </form>
                 </div>
                 <div>
 
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
+                
             </div>
 
         </section>
