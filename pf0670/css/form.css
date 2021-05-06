@@ -4,25 +4,31 @@
     padding: 0;
 }
 
-#container {
-    font-size: 16px;
-
-}
-
-.form-container {
+.container {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }
 
-.dados-pessoais,
-.dados-profissionais {
+
+.box {
     display: block;
     width: 90%;
+    /*height: 150px;*/
     margin: 20px;
+    padding: 10px;
     max-width: 1200px;
-
+    border: 1px solid #ff0000;
 }
 
+.box-1 {
+    display: block;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 1200px;
+    border: 1px solid #ff0000;
+}
 
 
 /*
