@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="" type="text/css">
+    <link rel="stylesheet" href="./css/form.css" type="text/css">
     <title>VIEW</title>
 </head>
 
 <body>
     <div id="container">
-
 
         <div class="form-container">
 
@@ -34,9 +33,67 @@
                             <option value="sp">São Paulo</option>
                             <option value="rj">Rio de Janeiro</option>
                             <option value="sc">Santa Catarina</option>
+                            <option value="0" selected>Selecione uma opção</option>
                         </select>
                     </div>
                 </fieldset>
+                <fieldset class="dados-profissionais">
+                    <legend>Dados Profissionais</legend>
+                    <div>
+                        <span>Natureza do Cargo</span>
+                        <div class="dados">
+                            <input type="radio" name="rdbNatCargo" id="idRdbNatCargoG" value="g" checked="checked">
+                            <label for="idRdbNatCargoG">Gerência</label>
+                        </div>
+                        <div class="dados">
+                            <input type="radio" name="rdbNatCargo" id="idRdbNatCargoF" value="f" checked="checked">
+                            <label for="idRdbNatCargoF">Financeiro</label>
+                        </div>
+                        <div class="dados">
+                            <input type="radio" name="rdbNatCargo" id="idRdbNatCargoR" value="r" checked="checked">
+                            <label for="idRdbNatCargoR">Recepção</label>
+                        </div>
+                        <div class="dados">
+                            <input type="radio" name="rdbNatCargo" id="idRdbNatCargoA" value="a" checked="checked">
+                            <label for="idRdbNatCargoA">Administrativo</label>
+                        </div>
+                        <div class="dados">
+                            <input type="radio" name="rdbNatCargo" id="idRdbNatCargoJ" value="j" checked="checked">
+                            <label for="idRdbNatCargoJ">Jurídico</label>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Área de Interesse</span>
+                        <div class="dados">
+                            <input type="checkbox" name="chbAreaIntComp" id="idchbAreaIntComp" value="computacao">
+                            <label for="idchbAreaIntComp">Gerência</label>
+                        </div>
+                        <div class="dados">
+                            <input type="checkbox" name="chbAreaIntBio" id="idchbAreaIntBio" value="biologia">
+                            <label for="idchbAreaIntBio">Biologia</label>
+                        </div>
+                        <div class="dados">
+                            <input type="checkbox" name="chbAreaIntMA" id="idchbAreaIntMA" value="ma">
+                            <label for="idchbAreaIntMA">Meio Ambiente</label>
+                        </div>
+                        <div class="dados">
+                            <input type="checkbox" name="chbAreaIntEng" id="idchbAreaIntEng" value="eng">
+                            <label for="idchbAreaInteng">Engenharia</label>
+                        </div>
+                        <div class="dados">
+                            <input type="checkbox" name="chbAreaIntHist" id="idchbAreaIntHist" value="hist">
+                            <label for="idchbAreaIntHist">História</label>
+                        </div>
+                    </div>
+                    <div class="text-cur">
+                        <label for="idTxtCur">Mini-curriculo:</label>
+                        <textarea name="txtCur" id="idTxtCur" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn">Limpar</button>
+                </div>
             </form>
 
         </div>
